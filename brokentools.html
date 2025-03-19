@@ -164,8 +164,8 @@
                 const chat = model.startChat({
                     generationConfig,
                     //tools: [{googleSearch: {}}],// this works
-                    tools: [printTool],// this works
-                    //tools: [{googleSearch: {}},printTool],// googlesearch works, printtool does not (shows 'pending' in network tools)
+                    //tools: [printTool],// this works
+                    tools: [{googleSearch: {}},printTool],// googlesearch works, printtool does not (shows 'pending' in network tools)
 
 
                 });
